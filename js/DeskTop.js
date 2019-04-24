@@ -3,5 +3,5 @@ function DeskTop() {
 	this.cardList = [];
 	this.seaList = [];
 	this.outedList = [];
-	this.outCount = [];
+	this.outCount = 0;
 }

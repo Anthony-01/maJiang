@@ -6,8 +6,10 @@ function CellPlay(gold, id) {
 	this.m_whiteList = [];
 	this.m_outList = [];
 
-	this.mocard = null;
+	this.mocard = null; //摸牌？
 	this.outcard = null;
+	this.is_menqing = true;
+	this.clickpos = this.m_blackList.length - 1;
 }
 
 CellPlay.prototype.clearList = function () {
@@ -22,6 +24,10 @@ CellPlay.prototype.clearList = function () {
 CellPlay.prototype.updateGold = function() {
 
 }
-CellPlay.prototype.addBlack = function (card) {
 
+CellPlay.prototype.addBlack = function (cards) {
+    this.m_blackList = this.m_blackList.concat(cards);
+}
+CellPlay.prototype.addWhite = function(cards) {
+    this.m_whiteList = this.m_whiteList.concat(cards);
 }

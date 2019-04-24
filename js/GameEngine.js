@@ -1,8 +1,10 @@
 var zhuang;
 var cards = [];
+var canvas;
+var cxt
 function initGame() {
-	var canvas = document.getElementById('box');
-	var cxt = canvas.getContext('2d');
+	canvas = document.getElementById('box');
+	cxt = canvas.getContext('2d');
 	initCards();
 	LoadImage();
 	LoadAudio();

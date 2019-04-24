@@ -11,7 +11,7 @@ function Card(type, value, img, ado) {
 	this.img = img;
 	this.ado = ado;
 	this.draw = function(x, y) {
-		cxt.drawImage(this.img, x. y);
+		cxt.drawImage(this.img, x, y);
 	}
 	this.drawex = function(x, y, w, h) {
 
